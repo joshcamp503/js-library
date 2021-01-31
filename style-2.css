@@ -1,0 +1,26 @@
+#new-book-button {
+	float: right;
+}
+
+#main-container {
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    z-index: 13;
+}
+
+#form-container {
+    margin: 0 auto;
+    margin-top: 8%;
+    width: 25%;
+    background-color: white;
+    border: solid black 1px;
+	/*background-image: url('library.jpeg')*/
+}
+
+#form {
+	text-align: center;
+}
+
