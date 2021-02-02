@@ -73,9 +73,14 @@ function createEntry(obj) {
 
 	const emptyData = createHTML('td','class', 'empty-entry')
 	const dataButton = createHTML('button','class', 'entry-button')
+	dataButton.textContent = "Remove"
+	dataButton.addEventListener('click', (e) => {
+		e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
+	})
+	emptyData.appendChild(dataButton)
 
 	const row = createHTML('tr','class', 'entry')
-	row.append(titleData, authorData, pagesData, statusData)
+	row.append(titleData, authorData, pagesData, statusData, emptyData)
 
 
 	const display = document.getElementById('display')
